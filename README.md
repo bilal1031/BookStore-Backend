@@ -1,28 +1,35 @@
-# On Windows
+# Setting Up and Using the Book Store API
 
-# Create the virtual environment
+This guide provides steps to set up and run the Book Store API on Windows.
 
-python -m venv venv
+## Setup
 
-# Activate the virtual environment
+1. Create a Virtual Environment
 
-venv\Scripts\activate
+   python -m venv venv
 
-# Install the required packages in the requirements.txt
+2. Activate the Virtual Environment
 
-pip install -r /path/to/requirements.txt
+   venv\Scripts\activate
 
-# Start the server
+3. Install Required Packages
+
+   pip install -r /path/to/requirements.txt
+
+## Running the Server
+
+Navigate to the server directory and perform the following commands:
 
 cd server
 python manage.py makemigrations
 python manage.py migrate
 python manage.py runserver
 
-# Usage
+## Usage
 
-Load the file Book store.postman_collection present in the root folder into the postman to see and access the api
+1. Postman Collection: Load the file `Book store.postman_collection` located in the root folder into Postman.
 
-- The api uses token authentication and postman is already setup
-- After getting a token you can replace it with variable in Token {{bearer}} in postman to access all other APIs other the auth.
-- The collection version of postman in v2.1
+2. API Authentication:
+   - The API utilizes token authentication. Postman setup is already configured.
+   - Upon obtaining a token, replace it with the variable `Token {{bearer}}` in Postman to access all other APIs apart from authentication.
+   - The Postman collection version is v2.1.
