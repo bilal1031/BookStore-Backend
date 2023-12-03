@@ -24,12 +24,12 @@ Navigate to the server directory and perform the following commands:
 
 cd server
 
-# Perform migrations
+## Perform migrations
 
 python manage.py makemigrations
 python manage.py migrate
 
-# Start the server
+## Start the server
 
 python manage.py runserver
 
