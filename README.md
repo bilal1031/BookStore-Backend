@@ -6,32 +6,44 @@ This guide provides steps to set up and run the Book Store API on Windows.
 
 1. Create a Virtual Environment
 
+```bash
    python -m venv venv
+```
 
 2. Activate the Virtual Environment
 
+```bash
    venv\Scripts\activate
+```
 
 3. Install Required Packages
 
+```bash
    pip install -r /path/to/requirements.txt
+```
 
 ## Running the Server
 
 Navigate to the server directory and perform the following commands:
 
-# Navigate to the server directory
+## Navigate to the server directory
 
+```bash
 cd server
+```
 
 ## Perform migrations
 
+```bash
 python manage.py makemigrations
 python manage.py migrate
+```
 
 ## Start the server
 
+```bash
 python manage.py runserver
+```
 
 ## Usage
 
