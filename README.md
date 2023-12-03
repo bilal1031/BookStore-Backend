@@ -20,9 +20,17 @@ This guide provides steps to set up and run the Book Store API on Windows.
 
 Navigate to the server directory and perform the following commands:
 
+# Navigate to the server directory
+
 cd server
+
+# Perform migrations
+
 python manage.py makemigrations
 python manage.py migrate
+
+# Start the server
+
 python manage.py runserver
 
 ## Usage
